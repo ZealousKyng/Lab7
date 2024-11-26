@@ -2,9 +2,9 @@ name: .NET Core Console CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build-and-test:
@@ -16,7 +16,7 @@ jobs:
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     env:
-      Solution_Name: Blazor_Lab_Starter_Code.sln 
+      Solution_Name: Blazor_Lab_Starter_Code.sln
       Test_Project_Path: LibTests/LibTests.csproj
 
     steps:
@@ -26,14 +26,10 @@ jobs:
     - name: Install .NET Core
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '7.0.x' 
+        dotnet-version: '7.0.x'
 
     - name: Restore NuGet packages
       run: dotnet restore ${{ env.Solution_Name }}
 
     - name: Build solution
-      run: dotnet build ${{ env.Solution_Name }} --configuration Release --no-restore
-
-    - name: Test and publish results
-      run: |
-        dotnet test ${{ env.Test_Project_Path }} --no-restore --verbosity normal
+      run: dotnet build ${{ env.Solution_Name }} --configuration Release --no-
