@@ -18,7 +18,7 @@ jobs:
       Solution_Name: Blazor_Lab_Starter_Code.sln        # Your solution file name
       Test_Project_Path: LibTests/LibTests.csproj       # Path to your test project (LibTests)
       Wap_Project_Directory: .                          # Assuming your project is in the root of the repo, update if needed
-      Wap_Project_Path: Blazor_Lab_Starter_Code/Blazor_Lab_Starter_Code.csproj  # Path to your main project
+      Wap_Project_Path: Blazor_Lab_Starter_Code/Program.cs  # Path to your main project
 
     steps:
     - name: Checkout
