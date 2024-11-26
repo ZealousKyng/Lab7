@@ -316,7 +316,7 @@ namespace LibTests
             // Arrange:
             Program.users.Clear();
             Program.users.Add(new User { Id = 1, Name = "Seth Emerine", Email = "semerine05@icloud.com" });
-            Program.users.Add(new User { Id = 2, Name = "Jacob Norris", Email = "norrisj@outlook.com" });
+            Program.users.Add(new User { Id = 2, Name = "Jacob Norris", Email = "borrisj@outlook.com" });
 
             // Capture the console output
             var sw = new StringWriter();
