@@ -11,7 +11,7 @@ namespace LibTests
     {
 
         [TestMethod]
-        public void Fail_ReadBooks()
+        public void Fail_ReadBooks(
         {
             // Arrange:
             Program.books.Clear();
